@@ -60,6 +60,8 @@ extension CAPSPageMenu {
                 configuration.centerMenuItems = value
             case let .hideTopMenuBar(value):
                 configuration.hideTopMenuBar = value
+            case let .isPagingEnabled(value)
+                configuration.isPagingEnabled = value
             }
         }
         
@@ -73,7 +75,7 @@ extension CAPSPageMenu {
         let viewsDictionary = ["menuScrollView":menuScrollView, "controllerScrollView":controllerScrollView]
         
         // Set up controller scroll view
-        controllerScrollView.isPagingEnabled = true
+        controllerScrollView.isPagingEnabled = configuration.isPagingEnabled
         controllerScrollView.translatesAutoresizingMaskIntoConstraints = false
         controllerScrollView.alwaysBounceHorizontal = configuration.enableHorizontalBounce
         controllerScrollView.bounces = configuration.enableHorizontalBounce
