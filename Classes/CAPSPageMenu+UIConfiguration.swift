@@ -62,7 +62,7 @@ extension CAPSPageMenu {
                 configuration.hideTopMenuBar = value
             case let .isPagingEnabled(value):
                 configuration.isPagingEnabled = value
-            case let .isScrollEnabled(value)
+            case let .isScrollEnabled(value):
                 configuration.isScrollEnabled = value
             }
         }
