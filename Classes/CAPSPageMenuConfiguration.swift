@@ -36,7 +36,7 @@ public class CAPSPageMenuConfiguration {
     open var hideTopMenuBar : Bool = false
     open var isPagingEnabled : Bool = true
     open var isScrollEnabled : Bool = true
-
+    open var menuScrollViewUserInteractionEnabled : Bool = true
     public init() {
         
     }
