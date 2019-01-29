@@ -45,4 +45,5 @@ public enum CAPSPageMenuOption {
     case centerMenuItems(Bool)
     case hideTopMenuBar(Bool)
     case isPagingEnabled(Bool)
+    case menuScrollViewUserInteractionEnabled(Bool)
 }
