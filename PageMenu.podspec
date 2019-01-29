@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PageMenu"
-  s.version      = "2.0.12"
+  s.version      = "2.0.14"
   s.summary      = "Highly customizable paging controller"
 
   # This description is used to generate tags and improve search results.
