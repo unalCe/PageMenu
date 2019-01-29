@@ -97,7 +97,7 @@ extension CAPSPageMenu {
         
         // Set up menu scroll view
         menuScrollView.translatesAutoresizingMaskIntoConstraints = false
-        menuScrollView.menuScrollViewUserInteractionEnabled = configuration.menuScrollViewUserInteractionEnabled
+        menuScrollView.isUserInteractionEnabled = configuration.menuScrollViewUserInteractionEnabled
         menuScrollView.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: configuration.menuHeight)
         
         self.view.addSubview(menuScrollView)
