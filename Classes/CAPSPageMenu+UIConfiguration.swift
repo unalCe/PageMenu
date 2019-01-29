@@ -62,6 +62,8 @@ extension CAPSPageMenu {
                 configuration.hideTopMenuBar = value
             case let .isPagingEnabled(value)
                 configuration.isPagingEnabled = value
+            case let .menuScrollViewInteractionEnabled(value)
+                configuration.menuScrollViewInteractionEnabled = value
             }
         }
         
@@ -92,7 +94,7 @@ extension CAPSPageMenu {
         
         // Set up menu scroll view
         menuScrollView.translatesAutoresizingMaskIntoConstraints = false
-        
+        menuScrollView.isUserInteractionEnabled = configuration.menuScrollViewInteractionEnabled 
         menuScrollView.frame = CGRect(x: 0.0, y: 0.0, width: self.view.frame.width, height: configuration.menuHeight)
         
         self.view.addSubview(menuScrollView)
