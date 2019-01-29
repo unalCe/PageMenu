@@ -60,9 +60,9 @@ extension CAPSPageMenu {
                 configuration.centerMenuItems = value
             case let .hideTopMenuBar(value):
                 configuration.hideTopMenuBar = value
-            case let .isPagingEnabled(value)
+            case let .isPagingEnabled(value):
                 configuration.isPagingEnabled = value
-            case let .menuScrollViewInteractionEnabled(value)
+            case let .menuScrollViewInteractionEnabled(value):
                 configuration.menuScrollViewInteractionEnabled = value
             }
         }
